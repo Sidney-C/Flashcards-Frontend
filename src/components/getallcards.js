@@ -2,7 +2,7 @@ import axios from "axios";
 
 async function GetAllCards() {
 
-    const apiURL = process.env.REACT_APP_API_URL;
+    const apiURL = import.meta.env.VITE_API_URL;
     const serverURL = `${apiURL}/allcards`;
 
     try {
